@@ -75,12 +75,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.subsystemregistration": {
-      "version": "1.1.0",
-      "depth": 2,
+      "version": "1.0.6",
+      "depth": 1,
       "source": "registry",
-      "dependencies": {
-        "com.unity.modules.subsystems": "1.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
@@ -125,11 +123,11 @@
       }
     },
     "com.unity.xr.arsubsystems": {
-      "version": "4.1.9",
+      "version": "4.0.9",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.subsystemregistration": "1.1.0"
+        "com.unity.subsystemregistration": "1.0.6"
       },
       "url": "https://packages.unity.com"
     },
@@ -143,7 +141,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.8",
+      "version": "2.1.7",
       "depth": 1,
       "source": "registry",
       "dependencies": {
