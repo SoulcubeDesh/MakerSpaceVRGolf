@@ -7,11 +7,16 @@ using UnityEngine.XR;
 [System.Serializable]
 public class PrimaryButtonEvent : UnityEvent<bool> { }
 
+[System.Serializable]
+public class SecondaryButtonEvent : UnityEvent<bool> { }
+
 public class putterScript : MonoBehaviour
 {
 
     public PrimaryButtonEvent primaryButtonPress;
+    public SecondaryButtonEvent SecondaryButtonPress;
     private bool lastButtonState = false;
+    private bool lastSecondaryButtonState = false;
     private List<UnityEngine.XR.InputDevice> allDevices;
     private List<UnityEngine.XR.InputDevice> devicesWithPrimaryButton;
 
@@ -25,7 +30,7 @@ public class putterScript : MonoBehaviour
     private bool _grabbingActive = false;
 
     private Vector2 _thumbSample;
-    private float _thumbStrength;
+    //private float _thumbStrength;
     private bool _thumbActive = false;
 
     private bool _leftTriggerDown;
@@ -54,6 +59,11 @@ public class putterScript : MonoBehaviour
             primaryButtonPress = new PrimaryButtonEvent();
         }
 
+        if (SecondaryButtonPress == null)
+        {
+            SecondaryButtonPress = new SecondaryButtonEvent();
+        }
+
         allDevices = new List<UnityEngine.XR.InputDevice>();
         devicesWithPrimaryButton = new List<UnityEngine.XR.InputDevice>();
         InputTracking.nodeAdded += InputTracking_nodeAdded;
@@ -72,10 +82,11 @@ public class putterScript : MonoBehaviour
     {
         _gripStrength = 0.0f;
         _gripSample = 0.0f;
-        _thumbStrength = 0.0f;
+        //_thumbStrength = 0.0f;
         _thumbSample = Vector2.zero;
 
         bool tempState = false;
+        bool secondaryTempState = false;
         bool invalidDeviceFound = false;
         foreach (var device in devicesWithPrimaryButton)
         {
@@ -84,6 +95,13 @@ public class putterScript : MonoBehaviour
                         && device.TryGetFeatureValue(CommonUsages.primaryButton, out buttonState) // did get a value
                         && buttonState // the value we got
                         || tempState; // cumulative result from other controllers
+
+            bool secondaryButtonState = false;
+            secondaryTempState = device.isValid // the device is still valid
+                        && device.TryGetFeatureValue(CommonUsages.secondaryButton, out secondaryButtonState) // did get a value
+                        && secondaryButtonState // the value we got
+                        || secondaryTempState; // cumulative result from other controllers
+
 
             if (!device.isValid)
                 invalidDeviceFound = true;
@@ -99,6 +117,7 @@ public class putterScript : MonoBehaviour
 
         if (Mathf.Abs(_thumbSample.y) >= 0.2f)
         {
+            //Debug.Log("thumb stick test");
             putterHead.transform.localPosition = putterHead.transform.localPosition + (new Vector3(_thumbSample.y * putterLengthSpeed * Time.deltaTime, 0.0f, 0.0f));
         }
 
@@ -137,6 +156,12 @@ public class putterScript : MonoBehaviour
         {
             primaryButtonPress.Invoke(tempState);
             lastButtonState = tempState;
+        }
+
+        if (secondaryTempState != lastSecondaryButtonState) // Button state changed since last frame
+        {
+            SecondaryButtonPress.Invoke(secondaryTempState);
+            lastSecondaryButtonState = secondaryTempState;
         }
 
         if (invalidDeviceFound || devicesWithPrimaryButton.Count == 0) // refresh device lists
@@ -207,4 +232,10 @@ public class putterScript : MonoBehaviour
         primaryButtonPressed = !primaryButtonPressed;
 
     }
+
+    public void testFunction()
+    {
+        Debug.Log("test test");
+    }
+
 }
