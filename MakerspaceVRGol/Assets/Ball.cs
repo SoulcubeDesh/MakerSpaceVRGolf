@@ -17,6 +17,10 @@ public class Ball : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("OnCollisionEnter" + collision.gameObject.name);
+        //Debug.Log("OnCollisionEnter" + collision.gameObject.name);
+        if (collision.gameObject.tag == "club")
+        {
+            HoleManager.Instance.MakeStroke();
+        }
     }
 }

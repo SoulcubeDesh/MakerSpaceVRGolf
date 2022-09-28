@@ -47,10 +47,12 @@ public class putterScript : MonoBehaviour
     public float putterLengthSpeed;
     public GameObject putterHead;
     private Vector3 originalPutterHeadPos;
+    public GameObject PutterRB;
 
     // Start is called before the first frame update
     void Start()
     {
+        PutterRB.transform.parent = null;
         originalPutterHeadPos = putterHead.transform.localPosition;
         originalPutterRotation = putter.transform.rotation;
 
