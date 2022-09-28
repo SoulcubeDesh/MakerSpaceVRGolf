@@ -41,7 +41,7 @@ public class HoleManager : MonoBehaviour
         {
             strokeDelayTimer += Time.deltaTime;
 
-            if (strokeDelayTimer > 1 && ball.rb.velocity.magnitude < 0.1f)
+            if (strokeDelayTimer > 1 && ball.rb.velocity.magnitude < 0.5f)
             {
                 Debug.Log(ball.rb.velocity.magnitude);
                 finishStroke();

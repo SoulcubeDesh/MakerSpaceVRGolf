@@ -23,4 +23,13 @@ public class Ball : MonoBehaviour
             HoleManager.Instance.MakeStroke();
         }
     }
+
+    private void Update()
+    {
+        if (!HoleManager.Instance.ballMoving)
+        {
+            rb.velocity = Vector3.zero;
+        }
+        
+    }
 }
