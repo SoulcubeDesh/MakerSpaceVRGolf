@@ -7,6 +7,8 @@ public class Hole : MonoBehaviour
     public StartingPoint startingPoint;
     public EndingHole endingHole;
 
+    public int strokeCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,6 @@ public class Hole : MonoBehaviour
 
     public void StartHole()
     {
-        startingPoint.StartHole();
+        strokeCount = 0;
     }
 }

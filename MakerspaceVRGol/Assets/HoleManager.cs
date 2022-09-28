@@ -14,6 +14,7 @@ public class HoleManager : MonoBehaviour
 
     public static HoleManager Instance;
 
+  
     private void Awake()
     {
         Instance = this;
@@ -22,6 +23,39 @@ public class HoleManager : MonoBehaviour
     public void Start()
     {
         StartNewHole(allHoles[0]);
+    }
+
+    public bool ballMoving;
+    public float strokeDelayTimer;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartHole();
+        }
+
+        if (ballMoving)
+        {
+            strokeDelayTimer += Time.deltaTime;
+
+            if (strokeDelayTimer > 1 && ball.rb.velocity.magnitude < 0.1f)
+            {
+                Debug.Log(ball.rb.velocity.magnitude);
+                finishStroke();
+            }
+        }
+    }
+
+    public Vector3 playerSpawnOffset;
+    public void finishStroke()
+    {
+        Debug.Log("inishStroke");
+        ballMoving = false;
+        ball.rb.velocity = Vector3.zero;
+
+        Vector3 newPlayerPos = ball.transform.position + playerSpawnOffset;
+        player.transform.position = newPlayerPos;
     }
 
     public Hole getNextHole()
@@ -47,5 +81,22 @@ public class HoleManager : MonoBehaviour
         currentHole = hole;
         player.transform.position = hole.startingPoint.playerSpawnPoint.position;
         ball.transform.position = hole.startingPoint.ballSpawnPoint.position;
+
+        ball.rb.velocity = Vector3.zero;
+        ball.rb.angularVelocity = Vector3.zero;
+
+        hole.StartHole();
+    }
+
+    public void RestartHole()
+    {
+        StartNewHole(currentHole); 
+    }
+
+    public void MakeStroke()
+    {
+        strokeDelayTimer = 0;
+        ballMoving = true;
+        currentHole.strokeCount++;
     }
 }
