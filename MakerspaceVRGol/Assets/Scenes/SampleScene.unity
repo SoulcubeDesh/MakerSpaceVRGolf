@@ -169,7 +169,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599916901}
-  m_Material: {fileID: 13400000, guid: a6957e48c3219e24ab5e850e7a5d09be, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -609,6 +609,11 @@ PrefabInstance:
       objectReference: {fileID: 2067800036}
     - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
         type: 3}
+      propertyPath: playerSpawnOffset.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
+        type: 3}
       propertyPath: allHoles.Array.data[0]
       value: 
       objectReference: {fileID: 1629457899}
@@ -780,8 +785,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 13400000, guid: 2738a29e619c2e146b3e2f5389a970ea,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec90545bd05942548bd0033dc667e5ad, type: 3}
 --- !u!1001 &7119929938258641869

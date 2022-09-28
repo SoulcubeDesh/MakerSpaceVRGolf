@@ -9,7 +9,7 @@ public class LevelCylinder : MonoBehaviour
     public string levelName;
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Club" && !LevelSelect.Instance.levelSelected)
+        if (collision.gameObject.tag == "club" && !LevelSelect.Instance.levelSelected)
         {
             OnSelect();
         }
@@ -18,7 +18,7 @@ public class LevelCylinder : MonoBehaviour
     public void OnSelect()
     {
         LevelSelect.Instance.levelSelected = true;
-        StartCoroutine(LevelLoadDelay());
+        LevelSelect.Instance.StartCoroutine(LevelSelect.Instance.LevelLoadDelay(levelName));
         meshDestroy.DestroyMesh();
 
         
