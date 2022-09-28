@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6330603631499920392}
   - component: {fileID: 6330603631499920391}
   - component: {fileID: 6330603631499920390}
+  - component: {fileID: 279379646}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d06b73aa48a82fd4cb0fbf23d4ec9742, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,8 +108,8 @@ Rigidbody:
   m_GameObject: {fileID: 6330603631499920393}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.1
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -126,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d72eeab469c6441a68cc27abf28468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 6330603631499920392}
 --- !u!114 &6330603631499920390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,3 +141,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6330603631499920392}
+  force: 0
+--- !u!114 &279379646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6330603631499920393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.27088183, b: 0.14528298, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

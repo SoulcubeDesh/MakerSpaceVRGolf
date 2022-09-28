@@ -58,6 +58,7 @@ public class HoleManager : MonoBehaviour
 
         Vector3 newPlayerPos = ball.transform.position + playerSpawnOffset;
         player.transform.position = newPlayerPos;
+        clubHead.transform.position = clubHeadPos.position;
     }
 
     public Hole getNextHole()
