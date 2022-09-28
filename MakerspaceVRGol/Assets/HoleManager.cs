@@ -71,7 +71,7 @@ public class HoleManager : MonoBehaviour
 
         return allHoles[newIndex];
     }
-
+    
     public void CompleteHole()
     {
         currentHole = getNextHole();
