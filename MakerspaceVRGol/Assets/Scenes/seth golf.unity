@@ -6312,6 +6312,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 543a7a0d05686f341bb800372650ee1b, type: 3}
+--- !u!4 &768213720 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4629967143905287512, guid: 543a7a0d05686f341bb800372650ee1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 768213719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &771247122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16470,6 +16476,11 @@ PrefabInstance:
       propertyPath: clubHead
       value: 
       objectReference: {fileID: 1033615220}
+    - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
+        type: 3}
+      propertyPath: clubHeadPos
+      value: 
+      objectReference: {fileID: 768213720}
     - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
         type: 3}
       propertyPath: allHoles.Array.size
