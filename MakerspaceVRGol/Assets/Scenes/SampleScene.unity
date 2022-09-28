@@ -143,6 +143,12 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &373004556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4629967143905287512, guid: 543a7a0d05686f341bb800372650ee1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1904607913}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &599916901
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +355,12 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 6330603631499920392, guid: ec90545bd05942548bd0033dc667e5ad,
     type: 3}
   m_PrefabInstance: {fileID: 6330603631664314045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &879376512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7705534035097013841, guid: 543a7a0d05686f341bb800372650ee1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1904607913}
   m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &919383833
 LightingSettings:
@@ -738,6 +750,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1904607914}
+    - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
+        type: 3}
+      propertyPath: clubHead
+      value: 
+      objectReference: {fileID: 879376512}
+    - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
+        type: 3}
+      propertyPath: clubHeadPos
+      value: 
+      objectReference: {fileID: 373004556}
     - target: {fileID: 4266227795047726338, guid: bded5df1ac8050e4db174cbcea1158b4,
         type: 3}
       propertyPath: playerSpawnOffset.z

@@ -10,6 +10,7 @@ public class HoleManager : MonoBehaviour
     public Hole currentHole;
     public GameObject player;
     public GameObject clubHead;
+    public Transform clubHeadPos;
 
     public List<Hole> allHoles = new List<Hole>();
 
@@ -86,7 +87,7 @@ public class HoleManager : MonoBehaviour
         ball.rb.velocity = Vector3.zero;
         ball.rb.angularVelocity = Vector3.zero;
 
-        clubHead.transform.localPosition = Vector3.zero;
+        clubHead.transform.position = clubHeadPos.position;
 
         hole.StartHole();
     }
