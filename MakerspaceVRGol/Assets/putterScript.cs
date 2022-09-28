@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class PrimaryButtonEvent : UnityEvent<bool> { }
@@ -30,6 +31,7 @@ public class putterScript : MonoBehaviour
     private bool _grabbingActive = false;
 
     private Vector2 _thumbSample;
+    private bool _joystickClick;
     //private float _thumbStrength;
     private bool _thumbActive = false;
 
@@ -112,15 +114,22 @@ public class putterScript : MonoBehaviour
             _gripStrength = Mathf.Max(_gripStrength, _gripSample);
 
             device.TryGetFeatureValue(CommonUsages.primary2DAxis, out _thumbSample);
+
+            device.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out _joystickClick);
             
            //     .TryGetFeature Value
            // _gripStrength = Mathf.Max(_gripStrength, _gripSample);
+        }
+         
+        if (_joystickClick)
+        {
+            SceneManager.LoadScene("LevelSelect");
         }
 
         if (Mathf.Abs(_thumbSample.y) >= 0.2f)
         {
             //Debug.Log("thumb stick test");
-            putterHead.transform.localPosition = putterHead.transform.localPosition + (new Vector3(_thumbSample.y * putterLengthSpeed * Time.deltaTime, 0.0f, 0.0f));
+            putterHead.transform.localPosition = putterHead.transform.localPosition + (new Vector3(_thumbSample.y * putterLengthSpeed * Time.deltaTime * -1.0f, 0.0f, 0.0f));
         }
 
         if (_gripStrength > 0.2f)
@@ -145,7 +154,7 @@ public class putterScript : MonoBehaviour
         {
             if (isLeftHand)
             {
-                putter.transform.LookAt(rightController.transform);
+                putter.transform.LookAt(rightController.transform, leftController.transform.up);
                 //putter.transform.rot
             }
             else
