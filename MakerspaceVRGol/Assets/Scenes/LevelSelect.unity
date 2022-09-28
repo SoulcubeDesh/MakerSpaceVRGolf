@@ -451,6 +451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: levelName
+      value: gold1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
 --- !u!1 &712755441 stripped
