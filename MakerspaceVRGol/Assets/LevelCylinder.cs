@@ -7,6 +7,7 @@ public class LevelCylinder : MonoBehaviour
     public MeshDestroy meshDestroy;
 
     public string levelName;
+    public float rotSpeed;
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "club" && !LevelSelect.Instance.levelSelected)
@@ -23,6 +24,9 @@ public class LevelCylinder : MonoBehaviour
 
         
     }
+    private void Update()
+    {
+        transform.Rotate(0, rotSpeed * Time.deltaTime, 0, Space.World);
+    }
 
-    
 }

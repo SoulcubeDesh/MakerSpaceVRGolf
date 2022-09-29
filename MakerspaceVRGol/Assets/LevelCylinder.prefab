@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshDestroy: {fileID: 951330720961307416}
   levelName: 
+  rotSpeed: 10
 --- !u!54 &1178891287393351006
 Rigidbody:
   m_ObjectHideFlags: 0
