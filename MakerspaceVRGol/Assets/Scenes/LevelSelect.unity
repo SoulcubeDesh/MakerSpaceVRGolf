@@ -586,6 +586,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6965783668737616030}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &712755443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712755441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b44f5b676e4894e8b8c81ef4623e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshDestroy: {fileID: 6965783668737616031}
+  levelName: isaac
+  rotSpeed: 5
 --- !u!1 &906246281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,7 +1296,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2b5dcecbc105e76468935669c8c74a49, type: 2}
+      objectReference: {fileID: 2100000, guid: c4bcd6ab93f011848ae8a9a0bf51bca6, type: 2}
     - target: {fileID: 6965783668365811820, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: m_RootOrder
@@ -1345,3 +1360,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
+--- !u!114 &6965783668737616031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 951330720961307416, guid: ef3466981a4fd204cb7dc5304280fe50,
+    type: 3}
+  m_PrefabInstance: {fileID: 6965783668737616030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712755441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad85dbfab85a73438169619de77130d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
