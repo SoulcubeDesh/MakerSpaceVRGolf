@@ -18,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Materials/Scenes/gold1.unity
     guid: cd13e94f001693e4bb16d2c677b361e0
   - enabled: 1
+    path: Assets/Scenes/jaspar.unity
+    guid: e09b7cb7b94750c47858b8e950677dc1
+  - enabled: 1
     path: Assets/Scenes/seth golf.unity
-    guid: d6a81eda60ba12d4f952ccb46b25af20
+    guid: d5caed028c25fd543a5a472221231225
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
