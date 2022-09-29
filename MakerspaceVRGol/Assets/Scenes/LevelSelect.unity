@@ -839,7 +839,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0bb2f841d0fd7cc4c9e2c19776086109, type: 2}
+      objectReference: {fileID: 2100000, guid: 691328a0b6035744788d7eeb1d3f3ee8, type: 2}
     - target: {fileID: 6965783668365811820, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: m_RootOrder
@@ -900,7 +900,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
 --- !u!1001 &1735387109
 PrefabInstance:
@@ -1007,6 +1008,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 232931333}
     m_Modifications:
+    - target: {fileID: 6965783668365811818, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 691328a0b6035744788d7eeb1d3f3ee8, type: 2}
     - target: {fileID: 6965783668365811820, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: m_RootOrder
@@ -1067,7 +1073,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
 --- !u!1 &1974746073 stripped
 GameObject:
@@ -1088,6 +1095,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 232931333}
     m_Modifications:
+    - target: {fileID: 6965783668365811818, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 691328a0b6035744788d7eeb1d3f3ee8, type: 2}
     - target: {fileID: 6965783668365811820, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: m_RootOrder
@@ -1148,5 +1160,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
