@@ -592,6 +592,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 232931333}
     m_Modifications:
+    - target: {fileID: 6965783668365811818, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 282c3830e11f38e439c8d8fa188cfdc6, type: 2}
     - target: {fileID: 6965783668365811820, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: m_RootOrder
@@ -651,6 +656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelCylinder (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: levelName
+      value: seth golf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
