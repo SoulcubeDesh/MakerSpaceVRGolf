@@ -195,6 +195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: levelName
@@ -567,6 +572,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
       propertyPath: levelName
@@ -777,6 +787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelCylinder (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
@@ -1097,6 +1112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
@@ -1171,6 +1191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelCylinder (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50,
         type: 3}
@@ -1270,6 +1295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCylinder (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
@@ -1356,6 +1386,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelCylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965783668365811823, guid: ef3466981a4fd204cb7dc5304280fe50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8634738715048214077, guid: ef3466981a4fd204cb7dc5304280fe50, type: 3}
